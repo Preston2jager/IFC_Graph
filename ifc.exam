@@ -1,0 +1,11 @@
+#1041=IFCWALL(
+    '3lLx0gNe59vvExhby0Bfew', #唯一标识
+    #20, #指向的是ifcownerhistory
+    'Basic Wall:SIP 202mm Wall - conc clad:198694',
+    $,
+    'Basic Wall:SIP 202mm Wall - conc clad',
+    #1036,
+    #1040,
+    '198694',
+    .NOTDEFINED.
+    );
