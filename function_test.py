@@ -23,7 +23,7 @@ print("Loading successful")
 draw_split_line()
 #End of loading
 
-space = ifc_file.by_type('IfcSpace')[0]
+spaces = ifc_file.by_type('IfcSpace')
 
 def get_space_bounds(space):
     representation = space.Representation.Representations[0]  # Adjust as needed
@@ -48,16 +48,16 @@ def get_space_bounds(space):
 # 开始图形界面循环
 #start_display()
 
-Ifc_tree_building(ifc_file)
-draw_split_line
+IFC_tree = Ifc_tree_building(ifc_file)
+draw_split_line()
 
 
 
-#for space in spaces:
-    #elements = tree.select(space)
-    #for element in elements:
+for space in spaces:
+    elements = IFC_tree.select(space)
+    for element in elements:
         #if element.is_a('IfcWall'):
-        #print(element)
+        print(element)
         
         
 

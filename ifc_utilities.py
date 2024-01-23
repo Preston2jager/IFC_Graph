@@ -13,11 +13,14 @@ def Ifc_tree_building(ifc_file):
     if iterator.initialize():
         while True:
             tree.add_element(iterator.get_native())
-            element_count =+1
-            print("Element count:" + element_count, end='\r')
+            element_count += 1
+            print("Element count:", end=' ')
+            print(element_count, end='\r')
             if not iterator.next():
                 break
-    print("IFC tree built")
+        print("")
+        print("IFC tree built")
+    return(tree)
 
 #Display
     
